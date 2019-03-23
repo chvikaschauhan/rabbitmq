@@ -34,7 +34,7 @@ amqp.connect('amqp://localhost', function(err, conn) {
     var msg2 =  msg.content.toString();
  
      // res.send("message=" +  msg.content.toString());
-      console.log(" [x] Received %s", msg.content.toString());
+      console.log(" [x] Received msg %s", msg.content.toString());
       res.send(msg2);
       
     }, {noAck: true});
